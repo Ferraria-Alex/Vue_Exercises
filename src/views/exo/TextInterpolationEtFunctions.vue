@@ -1,24 +1,20 @@
 <template>
-  <div class="bg-warning-subtle p-3">
-    <h2>Text Interpolation</h2>
-    <div class="text-center">
-      <p>{{ bool }}</p>
-      <p>{{ string }}</p>
-      <p>{{ tab }}</p>
-      <p>{{ num }}</p>
-      <p>{{ obj }}</p>
-    </div>
+  <div>
+    <p class="text-center">{{ exemple().toUpperCase() }}</p>
   </div>
 </template>
 
 <script setup lang='js'>
-import { computed, watch, onMounted, onUpdated, onBeforeUnmount, ref } from 'vue'
+import { computed, watch, onMounted, onUpdated, onBeforeUnmount} from 'vue'
 
-const bool = ref(false);
-const string = ref('Memories de quelqun');
-const tab = ref(["Un", "Truc", 2, "Thé"]);
-const num = ref(15425496);
-const obj = ref({name: 'truc', age: 456, true: false});
+function exemple(){
+  let rand = Math.round(Math.random()*2);
+  if(rand > 0){
+    return 'This simple text.';
+  } else {
+    return 'This weird text.';
+  }
+}
 
 const props = defineProps({
   // v-model

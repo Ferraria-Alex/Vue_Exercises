@@ -15,18 +15,21 @@
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Lessons</a>
                         <ul class="dropdown-menu">
                             <li><router-link class="dropdown-item" to="/lesson-interpolation">Interpolation</router-link></li>
+                            <li><router-link class="dropdown-item" to="/lesson-v-html">Directive V-Html</router-link></li>
+                            <li><router-link class="dropdown-item" to="/lesson-v-bind">Directive V-Bind</router-link></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Exercises</a>
                         <ul class="dropdown-menu">
                             <li><router-link class="dropdown-item" to="/exo-interpolation">Exo01 - Interpolation</router-link></li>
+                            <li><router-link class="dropdown-item" to="/exo-interpolation-functions">Exo02 - Interpolation et Functions</router-link></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">TP</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><router-link class="dropdown-item" to="/tp-data-binding">TP01 - Data Binding</router-link></li>
                         </ul>
                     </li>
                 </ul>
