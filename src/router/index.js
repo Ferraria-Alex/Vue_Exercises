@@ -47,6 +47,11 @@ const router = createRouter({
             name: 'ExoEventBinding',
             component: () => import('../views/exo/EventBinding.vue')
         },
+        {
+            path: '/exo-create-bug',
+            name: 'ExoCreerBug',
+            component: () => import('../views/exo/createBug.vue')
+        },
         //! ----------------------------TP Views routes ----------------------------
         {
             path: '/tp-data-binding',

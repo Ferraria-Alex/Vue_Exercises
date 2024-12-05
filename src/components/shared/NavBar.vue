@@ -25,6 +25,7 @@
                             <li><router-link class="dropdown-item" to="/exo-interpolation">Exo01 - Interpolation</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-interpolation-functions">Exo02 - Interpolation et Functions</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-event-binding">Exo03 - Event Binding</router-link></li>
+                            <li><router-link class="dropdown-item" to="/exo-create-bug">Exo04 - Create Bug</router-link></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">

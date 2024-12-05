@@ -69,13 +69,15 @@ button:focus-visible {
 button.btn-plus{
   border-radius: 0px 8px 8px 0px;
   border: 2px solid transparent;
-  padding: 1px 5px;
+  padding: 0px 5px;
+  line-height: 30px;
 }
 
 button.btn-less{
   border-radius: 8px 0px 0px 8px;
   border: 2px solid transparent;
-  padding: 1px 5px;
+  padding: 0px 7px;
+  line-height: 30px;
 }
 
 input.no-m-b{
