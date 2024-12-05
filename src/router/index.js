@@ -77,6 +77,11 @@ const router = createRouter({
             name: 'TP-Reactivite',
             component: () => import('../views/tp/TP_Reactivite.vue')
         },
+        {
+            path: '/tp-dynamic-style',
+            name: 'TP-DynamicStyle',
+            component: () => import('../views/tp/TP_DynamicStyle.vue')
+        },
     ]
 });
 
