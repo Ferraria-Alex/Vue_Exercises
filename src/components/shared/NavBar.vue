@@ -27,6 +27,7 @@
                             <li><router-link class="dropdown-item" to="/exo-event-binding">Exo03 - Event Binding</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-create-bug">Exo04 - Create Bug</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-dynamic-styling">Exo05 - Dynamic Styling</router-link></li>
+                            <li><router-link class="dropdown-item" to="/exo-dynamic-class">Exo06 - Dynamic Class</router-link></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">

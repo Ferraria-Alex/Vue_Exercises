@@ -56,6 +56,11 @@ const router = createRouter({
             name: 'ExoDynamicStyling',
             component: () => import('../views/exo/DynamicStyling.vue')
         },
+        {
+            path: '/exo-dynamic-class',
+            name: 'ExoDynamicClass',
+            component: () => import('../views/exo/DynamicClass.vue')
+        },
         //! ----------------------------TP Views routes ----------------------------
         {
             path: '/tp-data-binding',
