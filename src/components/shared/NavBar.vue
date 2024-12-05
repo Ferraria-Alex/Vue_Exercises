@@ -26,6 +26,7 @@
                             <li><router-link class="dropdown-item" to="/exo-interpolation-functions">Exo02 - Interpolation et Functions</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-event-binding">Exo03 - Event Binding</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-create-bug">Exo04 - Create Bug</router-link></li>
+                            <li><router-link class="dropdown-item" to="/exo-dynamic-styling">Exo05 - Dynamic Styling</router-link></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -33,6 +34,7 @@
                         <ul class="dropdown-menu">
                           <li><router-link class="dropdown-item" to="/tp-data-binding">TP01 - Data Binding</router-link></li>
                           <li><router-link class="dropdown-item" to="/tp-event-binding">TP02 - Event Binding</router-link></li>
+                          <li><router-link class="dropdown-item" to="/tp-reactivite">TP03 - Reactivite</router-link></li>
                         </ul>
                     </li>
                 </ul>

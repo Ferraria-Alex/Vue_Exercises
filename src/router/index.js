@@ -30,7 +30,6 @@ const router = createRouter({
             name: 'LessonVBind',
             component: () => import('../views/lessons/LessonAttributeBinding.vue')
         },
-
         //! ----------------------------Exos Views routes ----------------------------
         {
             path: '/exo-interpolation',
@@ -52,6 +51,11 @@ const router = createRouter({
             name: 'ExoCreerBug',
             component: () => import('../views/exo/createBug.vue')
         },
+        {
+            path: '/exo-dynamic-styling',
+            name: 'ExoDynamicStyling',
+            component: () => import('../views/exo/DynamicStyling.vue')
+        },
         //! ----------------------------TP Views routes ----------------------------
         {
             path: '/tp-data-binding',
@@ -62,6 +66,11 @@ const router = createRouter({
             path: '/tp-event-binding',
             name: 'TP-EventBinding',
             component: () => import('../views/tp/TP_EventBinding.vue')
+        },
+        {
+            path: '/tp-reactivite',
+            name: 'TP-Reactivite',
+            component: () => import('../views/tp/TP_Reactivite.vue')
         },
     ]
 });
