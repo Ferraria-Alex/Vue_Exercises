@@ -24,12 +24,14 @@
                         <ul class="dropdown-menu">
                             <li><router-link class="dropdown-item" to="/exo-interpolation">Exo01 - Interpolation</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-interpolation-functions">Exo02 - Interpolation et Functions</router-link></li>
+                            <li><router-link class="dropdown-item" to="/exo-event-binding">Exo03 - Event Binding</router-link></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">TP</a>
                         <ul class="dropdown-menu">
                           <li><router-link class="dropdown-item" to="/tp-data-binding">TP01 - Data Binding</router-link></li>
+                          <li><router-link class="dropdown-item" to="/tp-event-binding">TP02 - Event Binding</router-link></li>
                         </ul>
                     </li>
                 </ul>

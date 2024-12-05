@@ -30,6 +30,7 @@ const router = createRouter({
             name: 'LessonVBind',
             component: () => import('../views/lessons/LessonAttributeBinding.vue')
         },
+
         //! ----------------------------Exos Views routes ----------------------------
         {
             path: '/exo-interpolation',
@@ -41,11 +42,21 @@ const router = createRouter({
             name: 'ExoInterpolationFunctions',
             component: () => import('../views/exo/TextInterpolationEtFunctions.vue')
         },
+        {
+            path: '/exo-event-binding',
+            name: 'ExoEventBinding',
+            component: () => import('../views/exo/EventBinding.vue')
+        },
         //! ----------------------------TP Views routes ----------------------------
         {
             path: '/tp-data-binding',
             name: 'TP-DataBinding',
             component: () => import('../views/tp/TP_DataBinding.vue')
+        },
+        {
+            path: '/tp-event-binding',
+            name: 'TP-EventBinding',
+            component: () => import('../views/tp/TP_EventBinding.vue')
         },
     ]
 });
