@@ -61,6 +61,16 @@ const router = createRouter({
             name: 'ExoDynamicClass',
             component: () => import('../views/exo/DynamicClass.vue')
         },
+        {
+            path: '/exo-v-for',
+            name: 'ExoVFOR',
+            component: () => import('../views/exo/V-for.vue')
+        },
+        {
+            path: '/exo-v-if',
+            name: 'ExoVIF',
+            component: () => import('../views/exo/V-If.vue')
+        },
         //! ----------------------------TP Views routes ----------------------------
         {
             path: '/tp-data-binding',

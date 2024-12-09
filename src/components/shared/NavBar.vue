@@ -28,6 +28,8 @@
                             <li><router-link class="dropdown-item" to="/exo-create-bug">Exo04 - Create Bug</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-dynamic-styling">Exo05 - Dynamic Styling</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-dynamic-class">Exo06 - Dynamic Class</router-link></li>
+                            <li><router-link class="dropdown-item" to="/exo-v-for">Exo07 - V-For</router-link></li>
+                            <li><router-link class="dropdown-item" to="/exo-v-if">Exo08 - V-If</router-link></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
