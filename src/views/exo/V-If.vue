@@ -1,19 +1,18 @@
 <template>
   <div>
     <div class="container d-flex flex-column my-5">
-      <h1 class="text-center my-5">ADD YOUR FILM TO THE LIST</h1>
+      <h1 class="text-center my-5">ADD YOUR PERSONAL TAGS TO A LIST</h1>
       <input class="flex-grow my-2 p-1" id="film" type="text">
-      <button class="btn-primary my-1 align-self-start" @click="addFilm()">Ajouter un film</button>
+      <button class="btn-primary my-1 align-self-start" @click="addFilm()">Ajouter une tag</button>
       <hr>
-      <div id="list">
-        <div class="d-flex justify-content-between align-items-center border-start border-primary px-2 py-1 my-1" v-for="(film, index) in filmTab">
-          <p class="m-0">{{ index }} - {{ film }}</p>
-          <button class="btn-primary"  v-on:click="deleteFilm(index)" > Remove </button>
+      <ul id="list" class="list-group">
+        <div class="d-flex align-items-center flex-wrap ">
+          <li class="anim m-0 list-group-item border border-2 border-success rounded-2 px-2 py-1 m-1" v-for="(film, index) in filmTab" v-on:click="deleteFilm(index)" v-on:mouseover="change(index)" v-on:mouseleave="change(index)">{{ film }}</li>
         </div>
-      </div>
+      </ul>
       <hr>
-      <button class="btn-primary" v-if="toggle"  v-on:click="hide()">Afficher la liste</button>
-      <button class="btn-primary" v-else v-on:click="hide()">Masquer la liste</button>
+      <button class="btn-primary" v-if="toggle"  v-on:click="hide()">Afficher la liste des tags</button>
+      <button class="btn-primary" v-else v-on:click="hide()">Masquer la liste des tags</button>
     </div>
   </div>
 </template>
@@ -38,7 +37,18 @@ function hide(){
   toggle.value = !toggle.value;
 }
 
+function change(index){
+  let listElements = document.getElementsByClassName("anim");
+  listElements[index].classList.toggle("border-success");
+  listElements[index].classList.toggle("delete");
+  listElements[index].classList.toggle("border-danger");
+}
+
 </script>
 
 <style scoped lang="css">
+.delete:hover{
+  background-color: red;
+  color: white;
+}
 </style>

@@ -71,6 +71,11 @@ const router = createRouter({
             name: 'ExoVIF',
             component: () => import('../views/exo/V-If.vue')
         },
+        {
+            path: '/exo-props',
+            name: 'ExoProps',
+            component: () => import('../views/exo/Friends.vue')
+        },
         //! ----------------------------TP Views routes ----------------------------
         {
             path: '/tp-data-binding',
