@@ -4,7 +4,7 @@
     <ul class="list-group">
       <li class="list-group-item d-flex justify-content-between align-items-center p-2 ps-3" v-for="item in items">
         <p class="m-0">{{ item.name }}</p>
-        <router-link :to="`/details/${item.id}`"><button>Details</button></router-link>
+        <router-link :to="`/exo-lesson-router/details/${item.id}`"><button>Details</button></router-link>
       </li>
     </ul>
   </div>

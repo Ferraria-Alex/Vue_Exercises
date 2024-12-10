@@ -115,7 +115,7 @@ const router = createRouter({
         },
         //! ---------------------------- Exo Details ----------------------------
         {
-            path: '/details/:id',
+            path: '/exo-lesson-router/details/:id',
             name: 'TP-DynamicComp',
             props: true,
             component: () => import('../components/shared/DetailsPage.vue')
