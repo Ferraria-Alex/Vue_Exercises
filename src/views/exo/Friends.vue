@@ -1,6 +1,6 @@
 <template>
   <one-friend v-for="person in testContactList" :name="person[0]" :email="person[2]" :phone="person[1]"></one-friend>
-  <one-friend-bug v-for="person in testContactList" :name="person[0]" :email="person[2]" :phone="person[1]"></one-friend-bug>
+  <one-friend-bug v-for="person in testContactList" :name="person[0]" :email="person[2]" :phone="person[1]" premium="true"></one-friend-bug>
 </template>
 
 <script setup lang='js'>

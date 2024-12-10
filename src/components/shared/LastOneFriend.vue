@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="container my-4 bg-primary-subtle rounded-1 p-3">
-      <div class="bg-white rounded-1 my-1 px-2">
-        <h1>{{ props.name }}</h1>
+      <div class="d-flex justify-content-between bg-white rounded-1 my-1">
+        <!--<h2>{{ props.name }} - {{ props.premium === 'abc' ? 'Ami Premium' : 'Ami Nul' }}</h2>-->
+        <h2>{{ props.name }} - {{ ppremium == true ? 'Ami Premium' : 'Ami Nul' }}</h2>
+        <button class="btn-primary" v-on:click="afficherPremiumTest()">Toogle Favorites</button>
       </div>
       <div class="d-flex my-1">
         <button class="btn-primary flex-grow-1" v-if="toggle" v-on:click="hide()">Afficher les infos</button>
@@ -22,12 +24,36 @@
 import { computed, watch, onMounted, onUpdated, onBeforeUnmount, ref } from 'vue'
 
 let toggle = ref(false);
-// const props = defineProps(['name', 'email', 'phone']);
 
-const props = defineProps({name:{type:String,required:true}, email:{type:String,required:true}, phone:{type:Number,required:true}});
+//const props = defineProps(['name', 'email', 'phone','premium']);
+const props = defineProps({
+  name:{
+    type:String,
+    required:true
+  }, 
+  email:{
+    type:String,
+    required:true
+  }, 
+  phone:{
+    type:Number,
+    required:true
+  }, premium:
+  {type:Boolean
+    ,required:false
+    ,default:false
+  }
+});
+
+let ppremium = ref(props.premium);
 
 function hide(){
   toggle.value = !toggle.value;
+}
+
+function afficherPremiumTest(){
+  ppremium.value = !ppremium.value;
+  console.log(ppremium.value);
 }
 
 </script>

@@ -97,6 +97,11 @@ const router = createRouter({
             name: 'TP-DynamicStyle',
             component: () => import('../views/tp/TP_DynamicStyle.vue')
         },
+        {
+            path: '/tp-dynamic-comp',
+            name: 'TP-DynamicComp',
+            component: () => import('../views/tp/AllFriends.vue')
+        },
     ]
 });
 

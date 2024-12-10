@@ -40,6 +40,7 @@
                           <li><router-link class="dropdown-item" to="/tp-event-binding">TP02 - Event Binding</router-link></li>
                           <li><router-link class="dropdown-item" to="/tp-reactivite">TP03 - Reactivite</router-link></li>
                           <li><router-link class="dropdown-item" to="/tp-dynamic-style">TP04 - Dynamic Style</router-link></li>
+                          <li><router-link class="dropdown-item" to="/tp-dynamic-comp">TP05 - Dynamic Comp</router-link></li>
                         </ul>
                     </li>
                 </ul>
