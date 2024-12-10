@@ -1,6 +1,6 @@
 <template>
   <div>
-    <one-friend v-for="person in lesAmis" :keyId="person.id" :name="person.name" :email="person.email" :phone="person.phone" :premium="person.premium"></one-friend>
+    <one-friend v-for="person in lesAmis" :key="person.id" :keyId="person.id" :name="person.name" :email="person.email" :phone="person.phone" :premium="person.premium"></one-friend>
   </div>
 </template>
 
