@@ -81,6 +81,11 @@ const router = createRouter({
             name: 'ExoFetch',
             component: () => import('../views/exo/ApiFetchTest.vue')
         },
+        {
+            path: '/exo-emit',
+            name: 'ExoEmit',
+            component: () => import('../views/exo/Exo_DecouverteEmit.vue')
+        },
         //! ---------------------------- TP Views routes ----------------------------
         {
             path: '/tp-data-binding',
@@ -116,9 +121,9 @@ const router = createRouter({
         //! ---------------------------- Exo Details ----------------------------
         {
             path: '/exo-lesson-router/details/:id',
-            name: 'TP-DynamicComp',
-            props: true,
-            component: () => import('../components/shared/DetailsPage.vue')
+            name: 'Details',
+            component: () => import('../components/shared/DetailsPage.vue'),
+            props: true
         },
     ]
 });

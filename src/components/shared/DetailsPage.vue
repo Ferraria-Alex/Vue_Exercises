@@ -14,7 +14,7 @@ import { } from 'vue'
 
 let props = defineProps({
   id:{
-    type:Number,
+    type:String,
     required: true
   }
 })

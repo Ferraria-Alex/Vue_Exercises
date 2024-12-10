@@ -33,6 +33,7 @@
                             <li><router-link class="dropdown-item" to="/exo-props">Exo09 - Props</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-fetch">Exo10 - Fetch</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-lesson-router">Exo11 - RouterLink</router-link></li>
+                            <li><router-link class="dropdown-item" to="/exo-emit">Exo12 - Emit</router-link></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">

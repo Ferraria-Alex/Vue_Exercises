@@ -2,9 +2,9 @@
   <div class="container py-5">
     <p class="text-center">Phrase instructive</p>
     <ul class="list-group">
-      <li class="list-group-item d-flex justify-content-between align-items-center p-2 ps-3" v-for="item in items">
+      <li class="list-group-item d-flex justify-content-between align-items-center p-2 ps-3" v-for="item in items" :key="item.id">
         <p class="m-0">{{ item.name }}</p>
-        <router-link :to="`/exo-lesson-router/details/${item.id}`"><button>Details</button></router-link>
+        <router-link :to="{name:'Details',params:{id:item.id}}"><button>Details</button></router-link>
       </li>
     </ul>
   </div>
