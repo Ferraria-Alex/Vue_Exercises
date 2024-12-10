@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :id=" props.keyId ">
     <div class="container my-4 bg-primary-subtle rounded-1 p-3">
       <div class="d-flex justify-content-between bg-white rounded-1 my-1">
         <!--<h2>{{ props.name }} - {{ props.premium === 'abc' ? 'Ami Premium' : 'Ami Nul' }}</h2>-->
@@ -27,6 +27,10 @@ let toggle = ref(false);
 
 //const props = defineProps(['name', 'email', 'phone','premium']);
 const props = defineProps({
+  keyId:{
+    type:String,
+    required: true
+  },
   name:{
     type:String,
     required:true
@@ -36,7 +40,7 @@ const props = defineProps({
     required:true
   }, 
   phone:{
-    type:Number,
+    type:String,
     required:true
   }, premium:
   {type:Boolean

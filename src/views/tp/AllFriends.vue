@@ -1,6 +1,6 @@
 <template>
   <div>
-    <one-friend v-for="person in lesAmis" :key="person.id" :name="person.name" :email="person.email" :phone="person.phone" :premium="person.premium"></one-friend>
+    <one-friend v-for="person in lesAmis" :keyId="person.id" :name="person.name" :email="person.email" :phone="person.phone" :premium="person.premium"></one-friend>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ const lesAmis = ref([
     }
 ]);
 
-const OneFriend = defineAsyncComponent(()=>import("../../components/shared/LAstOneFriend.vue"));
+const OneFriend = defineAsyncComponent(()=>import("../../components/shared/LastOneFriend.vue"));
 
 </script>
 
