@@ -14,7 +14,7 @@ const router = createRouter({
             name: 'NotFound',
             component: () => import('../views/NotFoundView.vue')
         },
-        //! ----------------------------Lessons Views routes ----------------------------
+        //! ---------------------------- Lessons Views routes ----------------------------
         {
             path: '/lesson-interpolation',
             name: 'LessonInterpolation',
@@ -30,7 +30,7 @@ const router = createRouter({
             name: 'LessonVBind',
             component: () => import('../views/lessons/LessonAttributeBinding.vue')
         },
-        //! ----------------------------Exos Views routes ----------------------------
+        //! ---------------------------- Exos Views routes ----------------------------
         {
             path: '/exo-interpolation',
             name: 'ExoInterpolation',
@@ -76,7 +76,12 @@ const router = createRouter({
             name: 'ExoProps',
             component: () => import('../views/exo/Friends.vue')
         },
-        //! ----------------------------TP Views routes ----------------------------
+        {
+            path: '/exo-fetch',
+            name: 'ExoFetch',
+            component: () => import('../views/exo/ApiFetchTest.vue')
+        },
+        //! ---------------------------- TP Views routes ----------------------------
         {
             path: '/tp-data-binding',
             name: 'TP-DataBinding',
@@ -101,6 +106,19 @@ const router = createRouter({
             path: '/tp-dynamic-comp',
             name: 'TP-DynamicComp',
             component: () => import('../views/tp/AllFriends.vue')
+        },
+        //! ---------------------------- Exo Lesson Router ----------------------------
+        {
+            path: '/exo-lesson-router',
+            name: 'Exo-LessonRouter',
+            component: () => import('../views/exo/exoRouter.vue')
+        },
+        //! ---------------------------- Exo Details ----------------------------
+        {
+            path: '/details/:id',
+            name: 'TP-DynamicComp',
+            props: true,
+            component: () => import('../components/shared/DetailsPage.vue')
         },
     ]
 });

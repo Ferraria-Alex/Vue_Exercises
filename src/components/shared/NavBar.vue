@@ -31,6 +31,8 @@
                             <li><router-link class="dropdown-item" to="/exo-v-for">Exo07 - V-For</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-v-if">Exo08 - V-If</router-link></li>
                             <li><router-link class="dropdown-item" to="/exo-props">Exo09 - Props</router-link></li>
+                            <li><router-link class="dropdown-item" to="/exo-fetch">Exo10 - Fetch</router-link></li>
+                            <li><router-link class="dropdown-item" to="/exo-lesson-router">Exo11 - RouterLink</router-link></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
