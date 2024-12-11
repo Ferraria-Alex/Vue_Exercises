@@ -26,7 +26,7 @@ import { computed, watch, onMounted, onUpdated, onBeforeUnmount, ref } from 'vue
 let toggle = ref(false);
 
 //const props = defineProps(['name', 'email', 'phone','premium']);
-const props = defineProps({name:{type:String,required:true}, email:{type:String,required:true}, phone:{type:String,required:true}, premium:{type:Boolean,required:false}});
+const props = defineProps({id:{type: String, required: true},name:{type:String,required:true}, email:{type:String,required:true}, phone:{type:String,required:true}, premium:{type:Boolean,required:false}});
 
 const emit = defineEmits(['mon-event-premium']);
 
@@ -38,7 +38,7 @@ function hide(){
 
 function afficherPremiumTest(){
   ppremium.value = !ppremium.value;
-  emit('mon-event-premium');
+  this.emit('mon-event-premium', props.id);
 }
 
 

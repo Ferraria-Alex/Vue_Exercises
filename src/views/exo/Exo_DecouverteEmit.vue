@@ -1,6 +1,6 @@
 <template>
   <div>
-    <one-friend v-for="person in lesAmis" :key="person.id" :keyId="person.id" :name="person.name" :email="person.email" :phone="person.phone" :premium="person.premium" @mon-event-premium="truc()"></one-friend>
+    <emit v-for="person in lesAmis" :key="person.id" :id="person.id" :name="person.name" :email="person.email" :phone="person.phone" :premium="person.premium" @mon-event-premium="truc"></emit>
   </div>
 </template>
 
@@ -24,12 +24,13 @@ const lesAmis = ref([
     }
 ]);
 
-function truc(){
-  alert('Truc');
+function truc(id){
+  const found = lesAmis.value.find((element) => element.id == id)
+  console.log(found);
 }
 
 
-const OneFriend = defineAsyncComponent(()=>import("../../components/shared/decouverteEmit.vue"));
+const emit = defineAsyncComponent(()=>import("../../components/shared/decouverteEmit.vue"));
 
 </script>
 
