@@ -28,7 +28,16 @@ let toggle = ref(false);
 //const props = defineProps(['name', 'email', 'phone','premium']);
 const props = defineProps({id:{type: String, required: true},name:{type:String,required:true}, email:{type:String,required:true}, phone:{type:String,required:true}, premium:{type:Boolean,required:false}});
 
-const emit = defineEmits(['mon-event-premium']);
+const emit = defineEmits({
+  'mon-event-premium': (param) => {
+    if(!param){
+      console.error("You Forgot Something Dummy");
+      return false;
+    } else {
+      return true;
+    }
+  }
+});
 
 let ppremium = ref(props.premium);
 
@@ -39,6 +48,7 @@ function hide(){
 function afficherPremiumTest(){
   ppremium.value = !ppremium.value;
   this.emit('mon-event-premium', props.id);
+  this.emit('mon-event-premium');
 }
 
 
